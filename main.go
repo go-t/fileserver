@@ -14,6 +14,8 @@ var (
 )
 
 func main() {
+	flag.Parse()
+	
 	if *flagV {
 		fmt.Printf("run file server on address %s dir %s\n", *flagBind, *flagRoot)
 	}
